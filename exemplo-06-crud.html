@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Categorias</title>
+    <link rel="stylesheet" href="assets/js/exemplo-06-crud.css">
+</head>
+<body>
+
+    <main class="container">
+        <h1>Cadastro de Categorias</h1>
+
+        <section class="card">
+            <h2>Nova Categoria</h2>
+
+            <form>
+                <div class="campo">
+                    <label for="campo-nome">Nome da categoria</label>
+                    <input 
+                        type="text" 
+                        id="campo-nome" 
+                        placeholder="Digite o nome da categoria"
+                    >
+                </div>
+
+                <button type="submit" class="botao-salvar">
+                    Salvar
+                </button>
+            </form>
+        </section>
+
+        <section class="card">
+            <h2>Lista de Categorias</h2>
+
+            <table id="tabela-categorias">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nome</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+
+                <tbody id="categorias">
+                    <tr>
+                        <td>1</td>
+                        <td>Alimentação</td>
+                        <td>
+                            <button class="botao-editar">Editar</button>
+                            <button class="botao-apagar">Apagar</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <script src="assets/js/exemplo-06-crud.js"></script>
+</body>
+</html>
